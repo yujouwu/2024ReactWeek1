@@ -102,7 +102,10 @@ function App() {
                 ( <div className="card">
                   <img src={ tempProduct.imageUrl } className="card-img-top object-fit-contain main-image" alt="main image" />
                   <div className="card-body">
-                    <h5 className="card-title">{ tempProduct.title }</h5>
+                    <h5 className="card-title">
+                      { tempProduct.title }
+                      <span class="badge text-bg-primary mb-2">{ tempProduct.category }</span>
+                    </h5>
                     <p className="card-text">商品描述：<br />{ tempProduct.description }</p>
                     <p className="card-text">商品內容：{ tempProduct.content }</p>
                     <p className="card-text">售價：<del className="text-secondary">{ tempProduct.origin_price } 元</del> / { tempProduct.price }</p>
